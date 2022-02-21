@@ -43,7 +43,7 @@ posts_filename = fixture_dir / 'posts.json'
 images_filename = fixture_dir / 'images.json'
 
 # Upload paths
-dev_dir = module_dir / '..' / 'dev'
+dev_dir = module_dir / '..' / 'uploads'
 available_images_filename = dev_dir / 'upload_fakes' / 'images.json'
 upload_dir = dev_dir / 'upload'
 upload_fake_dir = dev_dir / 'upload_fakes'

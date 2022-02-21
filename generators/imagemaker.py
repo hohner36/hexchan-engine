@@ -43,7 +43,7 @@ if len(images) == 0:
 
 # Get directories' paths
 script_dir = os.path.dirname(os.path.realpath(__file__))
-upload_dir = os.path.join(script_dir, '..', 'dev', 'upload_fakes')
+upload_dir = os.path.join(script_dir, '..', 'uploads', 'upload_fakes')
 images_dir = os.path.join(upload_dir, 'images')
 thumbs_dir = os.path.join(upload_dir, 'thumbs')
 

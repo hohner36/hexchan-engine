@@ -6,6 +6,9 @@ networks:
 volumes:
   hexchan_pg_data:
     driver: local
+  hexchan_app_data:
+    driver: local
+
 
 services:
   db:
@@ -20,6 +23,15 @@ services:
       - net
     volumes:
       - hexchan_pg_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    container_name: adminer
+    networks:
+      - net
+    ports:
+      - 8080:8080
 
   app:
     build: .
@@ -37,6 +49,9 @@ services:
 #      - AWS_ACCESS_KEY_ID=
 #      - AWS_SECRET_ACCESS_KEY=
 #      - AWS_STORAGE_BUCKET_NAME=
+    volumes:
+      - hexchan_app_data:/app/uploads
+
     ports:
       - 80:80
       - 443:443

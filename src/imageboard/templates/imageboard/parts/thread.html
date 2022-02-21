@@ -12,7 +12,7 @@
 
         <div class="thread__posts">
             {% for post in posts %}
-                {% include 'imageboard/parts/post.html' %}
+                {% include 'imageboard/parts/postunderthread.html' %}
 
                 {% if not forloop.last %}
                     <div class="thread__post-separator"></div>

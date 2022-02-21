@@ -2,7 +2,7 @@ from pathlib import Path
 
 module_path = Path(__file__).resolve()
 module_dir = module_path.parent
-dev_dir = module_dir / '..' / 'dev'
+dev_dir = module_dir / '..' / 'uploads'
 
 # Paths
 dev_paths = [
